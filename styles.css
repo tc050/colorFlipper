@@ -1,0 +1,126 @@
+:root {
+    --textColor: #2a3439dd;
+    --navBG: #faf9f6;
+    --shadow: #000000aa;
+    --container: #0a0a07;
+    --textColor2: #fffaff;
+    --textColor3: #add8e6;
+    --btn: #e1ad01;
+}
+
+* {
+    font-family: Copperplate, sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--navBG);
+    padding: 2vh 0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 5px 2px var(--shadow);
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+    margin: 0;
+}
+
+h1 {
+    color: var(--textColor);
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+li a {
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    transition: background-color 1s ease-out;
+    border-radius: 2px;
+}
+
+li a:hover {
+    background-color: var(--textColor);
+    color: var(--navBG);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    background-color: var(--container);
+    padding: 8vh 4vw;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+}
+
+h2 {
+    margin: 0 0 1.5rem 0;
+    color: var(--textColor2);
+    font-size: 1.2em;
+}
+
+.color-label {
+    font-size: 1.2rem;
+    color: var(--textColor3);
+}
+
+.btn {
+    border: 3px solid var(--btn);
+    border-radius: 5px;
+    padding: 0.2rem 1.5rem;
+    color: var(--container);
+    letter-spacing: 1.1px;
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        lightGreen,
+        skyBlue,
+        purple
+    );
+    transition: font-weight 0.5s ease-out;
+    transition: letter-spacing 0.5s ease-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-flex {
+        gap: 0;
+    }
+} 
