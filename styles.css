@@ -17,6 +17,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 nav {
@@ -72,7 +73,6 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
 }
 
 .container {
