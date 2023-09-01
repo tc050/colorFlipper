@@ -20,7 +20,7 @@ function hexNumber() {
     let hex = "#";
     for(let i = 0; i < 6; i++) {
         let randomChar = char[Math.floor(Math.random() * char.length)].toString();
-	hex += randomChar;
+	    hex += randomChar;
     }
 
     return hex;
